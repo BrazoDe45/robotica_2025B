@@ -50,13 +50,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AlgebraLineal\AlgebraLineal.csproj">
+    <ProjectReference Include="..\AlgebraLineal\Suma Vectores.csproj">
       <Project>{a3a51ab4-21a2-4a97-9c3a-2183c978d08b}</Project>
-      <Name>AlgebraLineal</Name>
+      <Name>Suma Vectores</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dot Product\Dot Product.csproj">
       <Project>{16421d22-a5a6-4e69-94b5-5b99987950af}</Project>
       <Name>Dot Product</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\String_To_Vector\String_To_Vector.csproj">
+      <Project>{6345791b-b074-4ecb-a1ab-4d33c7131bde}</Project>
+      <Name>String_To_Vector</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

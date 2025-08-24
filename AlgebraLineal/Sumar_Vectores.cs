@@ -27,7 +27,6 @@ namespace AlgebraLineal
                 {
                     c[i] = a[i] + b[i];
                 }
-
                 return c;
             }
         }

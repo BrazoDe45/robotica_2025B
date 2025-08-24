@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AlgebraLineal;
 using Dot_Product;
+using String_To_Vector;
 
 namespace ejercicio_1
 {
@@ -19,39 +20,11 @@ namespace ejercicio_1
                 Console.WriteLine("Puedes ingresar Q en cualquiera de los vectores para terminar el programa.\n");
                 Console.WriteLine("Ingresa los elementos del primer vector separados por una coma. ");
 
-                string[] a_str = Console.ReadLine().Split(',');
-                if (a_str[0] == "Q")
-                    break;
-
-                //RECOGER LINEA DE TEXTO Y SEPARAR NUMEROS
-                double[] a = Array.ConvertAll<string, double>(a_str, double.Parse);
+                double[] a =    Convertir.StringToVector(Console.ReadLine());
 
                 Console.WriteLine("Ingresa los elementos del segundo vector separados por una coma. ");
-                //RECOGER LINEA DE TEXTO Y SEPARAR NUMEROS
-                string[] b_str = Console.ReadLine().Split(',');
-                if (b_str[0] == "Q")
-                    break;
+                double[] b = Convertir.StringToVector(Console.ReadLine());
 
-                double[] b = Array.ConvertAll<string, double>(b_str, double.Parse);
-
-                /*
-                //REALIZAR SUMA DE VECTORES
-                double[] c;
-                try
-                {
-                    c = Vectores.Suma(a, b);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Se ha detectado la excepción {ex.Message}");
-                    return;
-                }
-                Console.WriteLine("El resultado de la suma es ");
-                Console.WriteLine(String.Join(", ", c));
-            }
-                */
-
-                //REALIZAR MULTIPLICACION DE VECTORES
                 double resultado_multiplicacion;
                 try
                 {
