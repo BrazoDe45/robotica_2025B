@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dot_Product
+namespace Multiplicacion_Vectores
 {
-    public class Dot_Product
+    public class Multiplicacion_vectores
     {
         static public double multiplicacion(double[] v1, double[] v2)
         {
@@ -19,7 +19,7 @@ namespace Dot_Product
 
             size = v1.Length;
 
-            for(int i=0; i < size; i++)
+            for (int i = 0; i < size; i++)
                 resultado += v1[i] * v2[i];
 
             return resultado;

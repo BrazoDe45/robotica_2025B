@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("AlgebraLineal")]
+[assembly: AssemblyTitle("Suma_Vectores")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AlgebraLineal")]
+[assembly: AssemblyProduct("Suma_Vectores")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("a3a51ab4-21a2-4a97-9c3a-2183c978d08b")]
+[assembly: Guid("a580f4a1-1c72-4390-89e6-1e6e31747887")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

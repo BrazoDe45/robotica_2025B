@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using AlgebraLineal;
-using Dot_Product;
-using String_To_Vector;
-
-namespace ejercicio_1
+using String_To_DoubleVector;
+using Multiplicacion_Vectores;
+using Suma_Vectores;
+namespace robotica_ejercicios_vectores
 {
     internal class Program
     {
@@ -16,19 +14,27 @@ namespace ejercicio_1
         {
             while (true)
             {
-                //TAREA: Ciclarlo hasta que uno de los vectores ingresados sea "Q"
                 Console.WriteLine("Puedes ingresar Q en cualquiera de los vectores para terminar el programa.\n");
                 Console.WriteLine("Ingresa los elementos del primer vector separados por una coma. ");
 
-                double[] a =    Convertir.StringToVector(Console.ReadLine());
+                string a_str = Console.ReadLine();
+                if (a_str == "Q")
+                    break;
+
+                double[] a = String_tovector.StringToVector(a_str);
 
                 Console.WriteLine("Ingresa los elementos del segundo vector separados por una coma. ");
-                double[] b = Convertir.StringToVector(Console.ReadLine());
+
+                string b_str = Console.ReadLine();
+                if (b_str == "Q")
+                    break;
+
+                double[] b = String_tovector.StringToVector(b_str);
 
                 double resultado_multiplicacion;
                 try
                 {
-                    resultado_multiplicacion = Dot_Product.Dot_Product.multiplicacion(a, b);
+                    resultado_multiplicacion = Multiplicacion_vectores.multiplicacion(a, b);
                 }
                 catch (Exception ex)
                 {

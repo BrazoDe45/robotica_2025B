@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
-// asociada con un ensamblado.
-[assembly: AssemblyTitle("String_To_Vector")]
+// asociada a un ensamblado.
+[assembly: AssemblyTitle("robotica_ejercicios_vectores")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("String_To_Vector")]
+[assembly: AssemblyProduct("robotica_ejercicios_vectores")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("6345791b-b074-4ecb-a1ab-4d33c7131bde")]
+[assembly: Guid("5a5e2ab8-eb51-47ad-9076-fda6777fb9c3")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
