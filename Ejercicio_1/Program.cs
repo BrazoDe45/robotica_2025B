@@ -32,7 +32,7 @@ namespace Ejercicio_1
                 double resultado_multiplicacion;
                 try
                 {
-                    resultado_multiplicacion = Operadores_Vectores.multiplicacion(a, b);
+                    resultado_multiplicacion = Operadores_Vectores.Dot_product(a, b);
                 }
                 catch (Exception ex)
                 {

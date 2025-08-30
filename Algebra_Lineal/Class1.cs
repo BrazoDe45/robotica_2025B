@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,21 +10,21 @@ namespace Algebra_Lineal
     public class Operadores_Vectores
     {
         //Metodos operaciones con vectores
-        static public double multiplicacion(double[] v1, double[] v2)
+        static public double Dot_product(double[] a, double[] b)
         {
-            if (v1.Length != v2.Length)
+            if (a.Length != b.Length)
                 throw new Exception("Las dimensiones de los vectores no coinciden.");
 
-            double resultado = 0;
+            double c = 0;
 
             int size;
 
-            size = v1.Length;
+            size = a.Length;
 
             for (int i = 0; i < size; i++)
-                resultado += v1[i] * v2[i];
+                c += a[i] * b[i];
 
-            return resultado;
+            return c;
         }
 
         static public double[] Suma(double[] a, double[] b)
