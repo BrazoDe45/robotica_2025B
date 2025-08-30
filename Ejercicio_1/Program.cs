@@ -1,38 +1,49 @@
-﻿using System;
+﻿using Algebra_Lineal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Algebra_Lineal
+namespace Ejercicio_1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            while (true)
+            {
                 Console.WriteLine("Puedes ingresar Q en cualquiera de los vectores para terminar el programa.\n");
                 Console.WriteLine("Ingresa los elementos del primer vector separados por una coma. ");
 
-                double[] a = Array.ConvertAll<string, double>(Console.ReadLine().Split(','), double.Parse);
+                string a_str = Console.ReadLine();
+                if (a_str == "Q")
+                    break;
+
+                double[] a = Operadores_Vectores.StringToVector(a_str);
 
                 Console.WriteLine("Ingresa los elementos del segundo vector separados por una coma. ");
 
-                double[] b = Array.ConvertAll<string, double>(Console.ReadLine().Split(','), double.Parse);
+                string b_str = Console.ReadLine();
+                if (b_str == "Q")
+                    break;
 
-            double resultado;
+                double[] b = Operadores_Vectores.StringToVector(a_str);
+
+                double resultado_multiplicacion;
                 try
                 {
-                    resultado = Dot_product.dot_product.multiplicacion(a, b);
+                    resultado_multiplicacion = Operadores_Vectores.multiplicacion(a, b);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Se ha detectado la excepción {ex.Message}");
                     return;
                 }
-                Console.WriteLine($"El resultado de la suma es {resultado}");
+                Console.WriteLine($"El resultado de la suma es {resultado_multiplicacion}");
 
                 Console.WriteLine("Presiona cualquier tecla para continuar...");
                 Console.ReadKey();
+            }
         }
     }
 }
