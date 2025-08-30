@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Multiplicacion_Vectores
+namespace Dot_product
 {
-    public class Multiplicacion_vectores
+    public class dot_product
     {
         static public double multiplicacion(double[] v1, double[] v2)
         {

@@ -3,49 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using String_To_DoubleVector;
-using Multiplicacion_Vectores;
-using Suma_Vectores;
-namespace robotica_ejercicios_vectores
+
+namespace Algebra_Lineal
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
                 Console.WriteLine("Puedes ingresar Q en cualquiera de los vectores para terminar el programa.\n");
                 Console.WriteLine("Ingresa los elementos del primer vector separados por una coma. ");
 
-                string a_str = Console.ReadLine();
-                if (a_str == "Q")
-                    break;
-
-                double[] a = String_tovector.StringToVector(a_str);
+                double[] a = Array.ConvertAll<string, double>(Console.ReadLine().Split(','), double.Parse);
 
                 Console.WriteLine("Ingresa los elementos del segundo vector separados por una coma. ");
 
-                string b_str = Console.ReadLine();
-                if (b_str == "Q")
-                    break;
+                double[] b = Array.ConvertAll<string, double>(Console.ReadLine().Split(','), double.Parse);
 
-                double[] b = String_tovector.StringToVector(b_str);
-
-                double resultado_multiplicacion;
+            double resultado;
                 try
                 {
-                    resultado_multiplicacion = Multiplicacion_vectores.multiplicacion(a, b);
+                    resultado = Dot_product.dot_product.multiplicacion(a, b);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Se ha detectado la excepción {ex.Message}");
                     return;
                 }
-                Console.WriteLine($"El resultado de la suma es {resultado_multiplicacion}");
+                Console.WriteLine($"El resultado de la suma es {resultado}");
 
                 Console.WriteLine("Presiona cualquier tecla para continuar...");
                 Console.ReadKey();
-            }
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Suma_Vectores
 {
-    public class Suma_vectores
+    public class suma_vectores
     {
         static public double[] Suma(double[] a, double[] b)
         {

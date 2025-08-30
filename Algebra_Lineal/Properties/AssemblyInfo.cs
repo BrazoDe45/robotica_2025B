@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
-// asociada con un ensamblado.
-[assembly: AssemblyTitle("String_To_DoubleVector")]
+// asociada a un ensamblado.
+[assembly: AssemblyTitle("Algebra_Lineal")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("String_To_DoubleVector")]
+[assembly: AssemblyProduct("Algebra_Lineal")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("cab08ebd-3b9c-4ee9-850f-f208240964b2")]
+[assembly: Guid("3e72ee36-480c-4229-9593-87af16c284d1")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

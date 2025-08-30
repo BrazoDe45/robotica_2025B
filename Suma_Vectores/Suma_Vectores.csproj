@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>a580f4a1-1c72-4390-89e6-1e6e31747887</ProjectGuid>
+    <ProjectGuid>74d3e8ab-fd10-4e9a-b970-2deef1aa035f</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Suma_Vectores</RootNamespace>

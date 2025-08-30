@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Multiplicacion_Vectores")]
+[assembly: AssemblyTitle("Dot_product")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Multiplicacion_Vectores")]
+[assembly: AssemblyProduct("Dot_product")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("1f882ec3-9dd0-4ca9-9528-35a9055bdda8")]
+[assembly: Guid("afa3c087-f2ad-463b-aa1f-40b505911261")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
