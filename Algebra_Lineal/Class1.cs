@@ -9,9 +9,44 @@ using System.Threading.Tasks;
 
 namespace Algebra_Lineal
 {
-    public class Operadores_Matrices
+    public class Matrix
     {
-        //TAREA 8
+        //StringToMatrix
+        static public double[,] StringToMatrix()
+        {
+            Console.Write("Número de filas: ");
+            int filas = int.Parse(Console.ReadLine());
+            
+
+            Console.Write("Número de columnas: ");
+            int columnas = int.Parse(Console.ReadLine());
+
+            //M x N
+            //3x4
+            // 5 5 5 5
+            //
+            //
+            
+            double[,] matriz = new double[filas, columnas];
+
+            Console.WriteLine("Ingresa la matriz fila por fila:");
+
+            for (int i = 0; i < filas; i++)
+            {
+                string[] valores = Console.ReadLine().Split(' ');
+                //1 2 3 4
+                //3 5 4 6
+                //34 54 56 45
+                for (int j = 0; j < columnas; j++)
+                {
+                    matriz[i, j] = double.Parse(valores[j]);
+                }
+            }
+
+            return matriz;
+        }
+
+        //TAREA 7
         static public double[,] Suma_de_Matrices(double[,] a, double[,] b)
         {
             //CANTIDAD DE RENGLONES
@@ -40,7 +75,7 @@ namespace Algebra_Lineal
             return c;
         }
 
-        //TAREA 7
+        //TAREA 6
         static public double[,] Multiplicacion_Matrices(double[,] a, double[,] b) 
         {
             //CANTIDAD DE RENGLONES
