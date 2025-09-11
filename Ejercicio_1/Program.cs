@@ -10,8 +10,22 @@ namespace Ejercicio_1
     {
         static void Main(string[] args)
         {
+            double[,] a = { { 4, 5 }, { 2, 3 } };
+            double[,] b = { { 3, 2 }, { 1, 2 } };
+
+            double[,] c = Operadores_Matrices.Multiplicacion_Matrices(a, b);
+            for (int i = 0; i < c.GetLength(0); i++)
+            {
+                for (int j = 0; j < c.GetLength(1); j++)
+                {
+                    Console.Write(c[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
+            /*
             while (true)
             {
+                
                 Console.WriteLine("Puedes ingresar Q en cualquiera de los vectores para terminar el programa.\n");
                 Console.WriteLine("Ingresa los elementos del primer vector separados por una coma. ");
 
@@ -42,8 +56,9 @@ namespace Ejercicio_1
                 Console.WriteLine($"El resultado de la suma es {resultado_multiplicacion}");
 
                 Console.WriteLine("Presiona cualquier tecla para continuar...");
-                Console.ReadKey();
+                Console.ReadKey()
             }
+            */
         }
     }
 }
